@@ -59,21 +59,23 @@ Built using **React** for the frontend and **FastAPI** for the backend, with **G
 
 ## 📁 Project Structure
 
-├── SCV/ # Backend
-│ ├── server.py # FastAPI server
-│ ├── ats_scorer.py # ATS scoring logic
-│ ├── matcher.py # Job description matching
-│ ├── llm_wrapper.py # Gemini API integration
-│ └── utils/ # Resume parsing utilities
+aiml_abl_final/
+├── SCV/                     # Backend
+│   ├── server.py            # FastAPI server
+│   ├── ats_scorer.py        # ATS scoring logic
+│   ├── matcher.py           # Job description matching
+│   ├── llm_wrapper.py       # Gemini API integration
+│   └── utils/               # Parsing utilities
 │
-├── frontend/ # React frontend
-│ ├── src/
-│ │ ├── App.jsx # Main component
-│ │ ├── ATSCharts.jsx # Chart visualizations
-│ │ └── App.css # Styling
-│ └── package.json
+├── frontend/                # React frontend
+│   ├── src/
+│   │   ├── App.jsx          # Main component
+│   │   ├── ATSCharts.jsx    # Chart visualizations
+│   │   └── App.css          # Styling
+│   └── package.json
 │
 └── README.md
+
 
 
 ---
@@ -88,28 +90,37 @@ Built using **React** for the frontend and **FastAPI** for the backend, with **G
 ---
 ## 🔧 Backend Setup
 
+1. Navigate to backend directory:
 cd SCV
+
+2. Install Python dependencies:
 pip install -r requirement.txt
 
-Create a .env file:
+3. Create a .env file with your API key:
 GEMINI_API_KEY=your_api_key_here
 
-Start the backend server:
+4. Start the server:
 python server.py
 
-Backend runs on:
+Server runs on:
 http://localhost:8000
 
 ---
 
 ## 🎨 Frontend Setup
 
+1. Navigate to frontend directory:
 cd frontend
+
+2. Install dependencies:
 npm install
+
+3. Start development server:
 npm run dev
 
 Frontend runs on:
 http://localhost:5173
+
 
 ## 🧪 Usage
 
